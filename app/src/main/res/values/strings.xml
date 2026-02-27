@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DicodingEvents</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="finished">Finished</string>
+    <string name="account">Account</string>
+    <string name="description">Description</string>
+    <string name="imagecover">imageCover</string>
+    <string name="dicoding_event">Dicoding Event</string>
+    <string name="search_events">Search events...</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="finished_events">Finished Events</string>
+    <string name="home_tagline">Discover and learn from the best events</string>
+</resources>
