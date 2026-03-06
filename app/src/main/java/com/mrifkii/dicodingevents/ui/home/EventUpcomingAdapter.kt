@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.mrifkii.dicodingevents.data.response.ListEventsItem
 import com.mrifkii.dicodingevents.databinding.ItemHomeUpcomingBinding
 
-class HomeUpcomingAdapter : ListAdapter<ListEventsItem, HomeUpcomingAdapter.MyViewHolder>(DIFF_CALLBACK) {
+class EventUpcomingAdapter : ListAdapter<ListEventsItem, EventUpcomingAdapter.MyViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding = ItemHomeUpcomingBinding.inflate(LayoutInflater.from(parent.context), parent, false)

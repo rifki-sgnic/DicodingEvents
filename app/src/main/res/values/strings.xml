@@ -10,4 +10,7 @@
     <string name="upcoming_events">Upcoming Events</string>
     <string name="finished_events">Finished Events</string>
     <string name="home_tagline">Discover and learn from the best events</string>
+    <string name="event_image">event image</string>
+    <string name="event_name">Dicoding Conference 2024</string>
+    <string name="event_location">Bandung</string>
 </resources>
