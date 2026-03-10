@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="280dp"
-    android:layout_height="wrap_content"
+    android:layout_height="280dp"
     android:layout_marginHorizontal="8dp"
     android:layout_marginVertical="8dp"
     app:cardCornerRadius="20dp"
@@ -11,36 +11,58 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
+        <!-- Background Image Skeleton -->
         <View
             android:id="@+id/img_skeleton"
             android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="#DDDDDD"
+            android:layout_height="match_parent"
+            android:background="#DDDDDD" />
+
+        <!-- Category Badge Skeleton -->
+        <View
+            android:id="@+id/category_skeleton"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_margin="12dp"
+            android:background="#CCCCCC"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/title_skeleton"
-            android:layout_width="200dp"
-            android:layout_height="20dp"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="12dp"
-            android:background="#DDDDDD"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_skeleton" />
-
+        <!-- City/Location Skeleton -->
         <View
             android:id="@+id/city_skeleton"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="16dp"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
-            android:background="#EEEEEE"
+            android:background="#BBBBBB"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_skeleton" />
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Time Skeleton -->
+        <View
+            android:id="@+id/time_skeleton"
+            android:layout_width="140dp"
+            android:layout_height="14dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#CCCCCC"
+            app:layout_constraintBottom_toTopOf="@+id/city_skeleton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Title Skeleton -->
+        <View
+            android:id="@+id/title_skeleton"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/time_skeleton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

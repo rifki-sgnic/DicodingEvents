@@ -7,7 +7,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mrifkii.dicodingevents.R
 import com.mrifkii.dicodingevents.databinding.ActivityMainBinding
-import com.mrifkii.dicodingevents.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 

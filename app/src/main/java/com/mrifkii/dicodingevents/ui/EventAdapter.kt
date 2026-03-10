@@ -1,5 +1,6 @@
 package com.mrifkii.dicodingevents.ui
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -8,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mrifkii.dicodingevents.data.response.ListEventsItem
 import com.mrifkii.dicodingevents.databinding.ItemEventsBinding
+import com.mrifkii.dicodingevents.ui.detail.DetailActivity
+import com.mrifkii.dicodingevents.utils.DateFormatter
 
 class EventAdapter : ListAdapter<ListEventsItem, EventAdapter.MyViewHolder>(DIFF_CALLBACK) {
 
@@ -29,11 +32,17 @@ class EventAdapter : ListAdapter<ListEventsItem, EventAdapter.MyViewHolder>(DIFF
             binding.tvItemDescription.text = event.summary
             binding.tvCategory.text = event.category
             binding.tvCity.text = event.cityName
-            binding.tvTime.text = event.beginTime
+            binding.tvTime.text = DateFormatter.formatEventDate(event.beginTime)
 
             Glide.with(binding.root.context)
                 .load(event.mediaCover)
                 .into(binding.imgItemPhoto)
+
+            binding.root.setOnClickListener {
+                val intent = Intent(binding.root.context, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.EXTRA_ID, event.id)
+                binding.root.context.startActivity(intent)
+            }
         }
     }
 

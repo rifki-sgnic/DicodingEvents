@@ -92,7 +92,7 @@
                 android:drawablePadding="6dp"
                 android:gravity="center_vertical"
                 android:textSize="13sp"
-                app:drawableStartCompat="@android:drawable/ic_menu_mylocation"
+                app:drawableStartCompat="@drawable/baseline_location_on_24"
                 app:drawableTint="?attr/colorPrimary"
                 tools:text="Bandung" />
 
@@ -108,7 +108,7 @@
                 android:drawablePadding="6dp"
                 android:gravity="center_vertical"
                 android:textSize="13sp"
-                app:drawableStartCompat="@android:drawable/ic_menu_today"
+                app:drawableStartCompat="@drawable/baseline_calendar_month_24"
                 app:drawableTint="?attr/colorPrimary"
                 tools:text="Oct 12, 2024" />
 

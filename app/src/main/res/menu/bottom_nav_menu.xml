@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@android:drawable/ic_menu_today"
-        android:title="Home" />
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
     <item
         android:id="@+id/navigation_finished"
-        android:icon="@android:drawable/ic_menu_recent_history"
-        android:title="Finished" />
+        android:icon="@drawable/baseline_event_available_24"
+        android:title="@string/finished" />
     <item
         android:id="@+id/navigation_account"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="Account" />
+        android:icon="@drawable/outline_account_circle_24"
+        android:title="@string/account" />
 </menu>
