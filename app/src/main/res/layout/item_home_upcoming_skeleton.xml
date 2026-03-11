@@ -22,7 +22,6 @@
 
         <!-- Category Badge Skeleton -->
         <View
-            android:id="@+id/category_skeleton"
             android:layout_width="80dp"
             android:layout_height="24dp"
             android:layout_margin="12dp"

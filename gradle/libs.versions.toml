@@ -37,4 +37,3 @@ shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shi
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

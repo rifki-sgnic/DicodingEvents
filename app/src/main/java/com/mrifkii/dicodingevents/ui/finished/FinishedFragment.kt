@@ -33,10 +33,6 @@ class FinishedFragment : Fragment() {
 
         setupRecyclerView()
         observeViewModel()
-
-//        if (savedInstanceState == null) {
-//            finishedViewModel.getFinishedEvents()
-//        }
     }
 
     private fun setupRecyclerView() {

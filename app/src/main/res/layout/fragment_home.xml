@@ -142,13 +142,13 @@
                         android:layout_marginTop="8dp"
                         android:orientation="vertical">
 
-                        <include layout="@layout/item_events_skeleton" />
+                        <include layout="@layout/item_events_skeleton" tools:ignore="DuplicateIncludedIds" />
 
-                        <include layout="@layout/item_events_skeleton" />
+                        <include layout="@layout/item_events_skeleton" tools:ignore="DuplicateIncludedIds" />
 
-                        <include layout="@layout/item_events_skeleton" />
+                        <include layout="@layout/item_events_skeleton" tools:ignore="DuplicateIncludedIds" />
 
-                        <include layout="@layout/item_events_skeleton" />
+                        <include layout="@layout/item_events_skeleton" tools:ignore="DuplicateIncludedIds" />
                     </LinearLayout>
                 </LinearLayout>
 
