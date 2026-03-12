@@ -5,11 +5,11 @@
         android:icon="@drawable/baseline_home_24"
         android:title="@string/home" />
     <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="@string/upcoming" />
+    <item
         android:id="@+id/navigation_finished"
         android:icon="@drawable/baseline_event_available_24"
         android:title="@string/finished" />
-    <item
-        android:id="@+id/navigation_account"
-        android:icon="@drawable/outline_account_circle_24"
-        android:title="@string/account" />
 </menu>

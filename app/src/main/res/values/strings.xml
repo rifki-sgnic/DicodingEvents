@@ -2,7 +2,6 @@
     <string name="app_name">DicodingEvents</string>
     <string name="home">Home</string>
     <string name="finished">Finished</string>
-    <string name="account">Account</string>
     <string name="imagecover">imageCover</string>
     <string name="dicoding_event">Dicoding Event</string>
     <string name="search_events">Search events…</string>
@@ -17,21 +16,10 @@
         <item quantity="one">%1$d Slot left</item>
         <item quantity="other">%1$d Slots left</item>
     </plurals>
-    <string name="about_this_event">About this Event</string>
-    <string name="event_ended">Event Ended</string>
-    <string name="sold_out">Sold Out</string>
-
-    <!-- Account Fragment -->
-    <string name="dummy_name">Dicoding Student</string>
-    <string name="dummy_email">student@dicoding.com</string>
-    <string name="full_name">Full Name</string>
-    <string name="user_email">user@email.com</string>
     <string name="search_results">Search Results</string>
-
-    <!-- Home Fragment -->
+    <string name="about_this_event">About this Event</string>
     <string name="no_events_found">No events found</string>
-
-    <!-- Detail Activity -->
     <string name="retry">Retry</string>
     <string name="not_found">Not Found</string>
+    <string name="upcoming">Upcoming</string>
 </resources>

@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.mrifkii.dicodingevents.ui.account.AccountFragment"
+        android:name="com.mrifkii.dicodingevents.ui.upcoming.UpcomingFragment"
         android:label="Account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_upcoming" />
 </navigation>

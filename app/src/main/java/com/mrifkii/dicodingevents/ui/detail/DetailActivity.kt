@@ -88,7 +88,6 @@ class DetailActivity : AppCompatActivity() {
 
     private fun setEventData(event: Event) {
         val remainingQuota = event.quota - event.registrants
-        val isPast = DateFormatter.isEventPast(event.beginTime)
 
         supportActionBar?.title = event.name
         binding.tvDetailName.text = event.name
@@ -108,20 +107,10 @@ class DetailActivity : AppCompatActivity() {
             .load(event.mediaCover)
             .into(binding.ivDetailImage)
 
-        val canRegister = remainingQuota > 0 && !isPast
-
-        binding.btnRegister.isEnabled = canRegister
-        binding.btnRegister.text = when {
-            isPast -> getString(R.string.event_ended)
-            remainingQuota <= 0 -> getString(R.string.sold_out)
-            else -> getString(R.string.register_for_event)
-        }
         binding.btnRegister.setOnClickListener {
-            if (binding.btnRegister.isEnabled) {
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = event.link.toUri()
                 startActivity(intent)
-            }
         }
     }
 

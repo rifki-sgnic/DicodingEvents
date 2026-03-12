@@ -9,15 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="24dp"
-        tools:context=".ui.finished.FinishedFragment">
+        tools:context=".ui.upcoming.UpcomingFragment">
 
         <TextView
-            android:id="@+id/tv_label_finished"
+            android:id="@+id/tv_label_upcoming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:text="@string/finished_events"
+            android:text="@string/upcoming_events"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@+id/tv_label_finished"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_upcoming"
             app:shimmer_auto_start="true">
 
             <LinearLayout
@@ -50,7 +50,7 @@
         </com.facebook.shimmer.ShimmerFrameLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_finished_events"
+            android:id="@+id/rv_upcoming_events"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -58,7 +58,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_label_finished"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_upcoming"
             tools:listitem="@layout/item_events" />
 
         <!-- Empty State Section -->
@@ -72,7 +72,7 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_label_finished"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_upcoming"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
